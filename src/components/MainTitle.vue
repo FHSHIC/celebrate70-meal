@@ -20,7 +20,7 @@ import fhshText from "../assets/fhshTEXT.png";
 
     <div class="relative">
       <p
-        class="h-font absolute inset-0 left-[24vw] top-8 w-[60vw] text-[6vw] md:top-14 lg:top-16"
+        class="h-font absolute inset-0 left-[24vw] top-8 w-[60vw] text-[5vw] md:top-14 lg:top-16"
       >
         相思大屯 ‧ 苒苒歲月
       </p>
