@@ -86,6 +86,10 @@ const navContents = [
   font-family: "wang-han-kai", sans-serif;
 }
 
+.noto-font {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 p {
   font-family: "Noto Sans TC", sans-serif;
 }
