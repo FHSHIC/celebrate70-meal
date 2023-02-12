@@ -16,6 +16,11 @@ const props = defineProps(["navContents"]);
     <a
       class="flex cursor-pointer items-center justify-center gap-2"
       href="#index"
+      v-scroll-to="{
+        el: '#index',
+        easing: 'ease',
+        duration: 400,
+      }"
     >
       <img :src="logo" alt="" class="h-8" />
       <p class="h-font flex flex-col items-center justify-center">
@@ -42,6 +47,11 @@ const props = defineProps(["navContents"]);
         v-for="content in props.navContents"
         :key="content.id"
         :href="content.id"
+        v-scroll-to="{
+          el: content.id,
+          duration: 500,
+          easing: 'ease-out',
+        }"
       >
         {{ content.content }}
       </a>
@@ -62,6 +72,11 @@ const props = defineProps(["navContents"]);
         v-for="content in props.navContents"
         :key="content.id"
         :href="content.id"
+        v-scroll-to="{
+          el: content.id,
+          duration: 500,
+          easing: 'ease-out',
+        }"
         @click="
           () => {
             checked.nav = false;
