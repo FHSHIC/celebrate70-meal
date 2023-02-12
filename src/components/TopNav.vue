@@ -2,7 +2,7 @@
 import { defineProps, reactive } from "vue";
 import logo from "../assets/celebrate-70-logo.png";
 
-let checked = reactive({
+const checked = reactive({
   nav: false,
 });
 
@@ -18,7 +18,7 @@ const props = defineProps(["navContents"]);
       href="#index"
     >
       <img :src="logo" alt="" class="h-8" />
-      <p class="h1-font flex flex-col items-center justify-center">
+      <p class="h-font flex flex-col items-center justify-center">
         <span class="text-sm sm:text-base lg:text-lg">70 週年</span>
         <span class="text-xs sm:text-sm lg:text-base">校慶募款餐會</span>
       </p>
@@ -26,11 +26,26 @@ const props = defineProps(["navContents"]);
 
     <label
       for="nav-menu"
-      class="z-30 cursor-pointer rounded-lg border-2 border-black px-2 py-1"
+      class="z-30 flex cursor-pointer items-center justify-center gap-x-3 rounded-lg border-2 border-black px-2 py-1 xl:hidden"
       v-if="!checked.nav"
     >
-      <font-awesome-icon icon="fa-solid fa-bars" class="" />
+      <font-awesome-icon icon="fa-solid fa-bars" class="text-xl sm:text-2xl" />
+      <p class="hidden flex-col items-center justify-center sm:flex">
+        <span>快捷</span>
+        <span>選單</span>
+      </p>
     </label>
+
+    <div class="hidden items-center justify-center gap-x-10 pr-6 xl:flex">
+      <a
+        class="noto-font cursor-pointer py-1 px-2 text-xl hover:bg-black/60 hover:text-gray-50"
+        v-for="content in props.navContents"
+        :key="content.id"
+        :href="content.id"
+      >
+        {{ content.content }}
+      </a>
+    </div>
   </div>
   <div>
     <input
