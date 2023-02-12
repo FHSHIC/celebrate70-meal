@@ -8,10 +8,10 @@ const infos = [
 
 <template>
   <div
-    class="space-y-5 px-10 pt-4 sm:flex sm:flex-col sm:items-start sm:justify-center"
+    class="space-y-4 px-10 pt-4 sm:flex sm:flex-col sm:items-start sm:justify-center sm:pl-[18vw] xl:pl-[22vw]"
   >
     <p
-      class="h1-font mx-auto text-xl sm:text-2xl lg:text-3xl"
+      class="mx-auto text-xl sm:w-full sm:text-2xl lg:text-3xl"
       v-for="(info, index) in infos"
       :key="index"
     >

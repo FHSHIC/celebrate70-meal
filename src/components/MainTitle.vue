@@ -9,7 +9,7 @@ import fhshText from "../assets/fhshTEXT.png";
   <h1 class="px-5 text-center lg:top-48">
     <img :src="fhshText" alt="" class="mx-auto mb-6 w-[70vw]" />
     <span
-      class="h1-font rounded-[2.5rem] bg-[#f8b7b5] px-6 py-1 text-2xl sm:px-8 sm:text-3xl lg:px-12 lg:text-5xl"
+      class="h-font rounded-[2.5rem] bg-[#f8b7b5] px-6 py-1 text-2xl sm:px-8 sm:text-3xl lg:px-12 lg:text-5xl"
     >
       70週年校慶募款餐會
     </span>
@@ -20,7 +20,7 @@ import fhshText from "../assets/fhshTEXT.png";
 
     <div class="relative">
       <p
-        class="h1-font absolute inset-0 left-[24vw] top-8 w-[60vw] text-[6vw] md:top-14 lg:top-16"
+        class="h-font absolute inset-0 left-[24vw] top-8 w-[60vw] text-[6vw] md:top-14 lg:top-16"
       >
         相思大屯 ‧ 苒苒歲月
       </p>
