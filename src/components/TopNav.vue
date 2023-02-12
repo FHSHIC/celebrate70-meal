@@ -40,10 +40,10 @@ const props = defineProps(["navContents"]);
       v-model="checked.nav"
     />
     <div
-      class="fixed top-12 z-20 flex h-12 w-screen -translate-y-24 flex-col items-center justify-center bg-[#c7dfdd] duration-75 peer-checked:translate-y-0"
+      class="fixed top-12 z-20 flex w-screen -translate-y-[100vh] flex-col items-center justify-center gap-y-8 bg-[#c7dfdd] py-4 px-4 duration-150 peer-checked:translate-y-0 sm:gap-10 sm:px-[10vw]"
     >
       <a
-        class="w-full cursor-pointer text-center"
+        class="w-full cursor-pointer rounded-md border-2 border-gray-500 py-2 text-center text-lg sm:text-xl lg:text-3xl"
         v-for="content in props.navContents"
         :key="content.id"
         :href="content.id"
