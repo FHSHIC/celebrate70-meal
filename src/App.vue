@@ -1,4 +1,6 @@
 <script setup>
+import { watch, reactive } from "vue";
+
 import TopImg from "./components/TopImg.vue";
 import MainTitle from "./components/MainTitle.vue";
 import TopNav from "./components/TopNav.vue";
@@ -33,6 +35,7 @@ const navContents = [
 
 <template>
   <div
+    id="container"
     class="relative h-screen w-screen overflow-y-auto overflow-x-hidden bg-[#c7dfdd]"
   >
     <TopNav :navContents="navContents" />
