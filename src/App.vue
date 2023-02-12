@@ -24,10 +24,11 @@ const navContents = [
       <MainTitle />
     </section>
 
-    <section id="basic-info" class="relative pb-5">
-      <Gap gapHeight="3rem" />
+    <section id="basic-info" class="relative">
+      <Gap gapHeight="2rem" />
       <SectionTitle title="餐會資訊" class="mb-5" />
       <MealInfo />
+      <Gap gapHeight="1rem" />
     </section>
   </div>
 </template>
