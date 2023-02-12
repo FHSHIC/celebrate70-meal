@@ -5,5 +5,5 @@ const props = defineProps(["gapHeight"]);
 </script>
 
 <template>
-  <div :style="{ height: gapHeight }"></div>
+  <div :style="{ height: props.gapHeight }"></div>
 </template>
