@@ -23,7 +23,9 @@ const props = defineProps(["navContents"]);
       }"
     >
       <img :src="logo" alt="" class="h-8" />
-      <p class="h-font flex flex-col items-center justify-center">
+      <p
+        class="h-font flex flex-col items-center justify-center tracking-normal"
+      >
         <span class="text-sm sm:text-base lg:text-lg">70 週年</span>
         <span class="text-xs sm:text-sm lg:text-base">校慶募款餐會</span>
       </p>

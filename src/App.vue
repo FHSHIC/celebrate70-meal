@@ -10,6 +10,7 @@ import Gap from "./components/Gap.vue";
 import Flow from "./components/Flow.vue";
 import Timeline from "./components/Timeline.vue";
 import MealIntro from "./components/MealIntro.vue";
+import InviteButton from "./components/InviteButton.vue";
 
 const preGapHeight = "4.5rem";
 
@@ -48,26 +49,29 @@ const navContents = [
       <Gap :gapHeight="preGapHeight" />
       <SectionTitle title="緣起" />
       <MealIntro />
+      <InviteButton />
     </section>
 
     <section id="basic-info" class="relative">
       <Gap :gapHeight="preGapHeight" />
       <SectionTitle title="餐會資訊" />
       <MealInfo />
+      <InviteButton />
     </section>
 
     <section id="flow">
       <Gap :gapHeight="preGapHeight" />
       <SectionTitle title="參與流程" />
       <Flow />
-      <Gap gapHeight="50vh" />
+      <InviteButton />
     </section>
 
     <section id="timeline">
       <Gap :gapHeight="preGapHeight" />
       <SectionTitle title="餐會活動時間表" />
       <Timeline />
-      <Gap gapHeight="50vh" />
+      <InviteButton />
+      <Gap gapHeight="10vh" />
     </section>
   </div>
 </template>
@@ -95,5 +99,6 @@ const navContents = [
 
 p {
   font-family: "Noto Sans TC", sans-serif;
+  @apply tracking-[0.2rem];
 }
 </style>
