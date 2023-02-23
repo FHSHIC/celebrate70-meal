@@ -25,7 +25,7 @@ const timelines = [
       class="flex flex-col gap-5 rounded-md border-2 border-gray-100 p-8 md:gap-16"
     >
       <p
-        class="space-y-5 text-center"
+        class="space-y-5 text-center text-3xl"
         v-for="(timeline, index) in timelines"
         :key="index"
       >
