@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="flex flex-col items-center justify-center gap-16 px-6 pt-10 pb-6 text-3xl"
+    class="flex flex-col items-center justify-center gap-16 px-6 pt-10 pb-6 text-2xl"
   >
     <div class="space-y-3">
       <p class="text-center">參與方式</p>
