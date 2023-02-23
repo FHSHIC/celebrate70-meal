@@ -34,7 +34,7 @@ const navContents = [
   },
   {
     id: "#transfer",
-    content: "參與方式",
+    content: "參與方式與聯繫",
   },
 ];
 </script>
