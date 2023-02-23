@@ -11,8 +11,9 @@ import Flow from "./components/Flow.vue";
 import Timeline from "./components/Timeline.vue";
 import MealIntro from "./components/MealIntro.vue";
 import InviteButton from "./components/InviteButton.vue";
+import TransferInfo from "./components/TransferInfo.vue";
 
-const preGapHeight = "4.5rem";
+const preGapHeight = "5rem";
 
 const navContents = [
   {
@@ -24,12 +25,16 @@ const navContents = [
     content: "餐會資訊",
   },
   {
+    id: "#timeline",
+    content: "餐會活動時間表",
+  },
+  {
     id: "#flow",
     content: "參與流程",
   },
   {
-    id: "#timeline",
-    content: "餐會活動時間表",
+    id: "#transfer",
+    content: "參與方式",
   },
 ];
 </script>
@@ -49,28 +54,35 @@ const navContents = [
       <Gap :gapHeight="preGapHeight" />
       <SectionTitle title="緣起" />
       <MealIntro />
-      <InviteButton />
+      <InviteButton content="我要參加" href="#flow" />
     </section>
 
     <section id="basic-info" class="relative">
       <Gap :gapHeight="preGapHeight" />
       <SectionTitle title="餐會資訊" />
       <MealInfo />
-      <InviteButton />
-    </section>
-
-    <section id="flow">
-      <Gap :gapHeight="preGapHeight" />
-      <SectionTitle title="參與流程" />
-      <Flow />
-      <InviteButton />
+      <InviteButton content="我要參加" href="#flow" />
     </section>
 
     <section id="timeline">
       <Gap :gapHeight="preGapHeight" />
       <SectionTitle title="餐會活動時間表" />
       <Timeline />
-      <InviteButton />
+      <InviteButton content="我要參加" href="#flow" />
+    </section>
+
+    <section id="flow">
+      <Gap :gapHeight="preGapHeight" />
+      <SectionTitle title="參與流程" />
+      <Flow />
+      <InviteButton content="了解更多" />
+    </section>
+
+    <section id="transfer">
+      <Gap :gapHeight="preGapHeight" />
+      <SectionTitle title="參與方式" />
+      <TransferInfo />
+      <InviteButton href="https://forms.gle/u73UoxdhkdRZbpq58" />
       <Gap gapHeight="10vh" />
     </section>
   </div>
