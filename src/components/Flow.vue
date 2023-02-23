@@ -2,8 +2,8 @@
 import FlowContent from "./FlowContent.vue";
 
 const flows = [
-  "填寫表單",
   "完成匯款",
+  "填寫表單",
   "等待匯款審核",
   "發送餐券及收據",
   "募款餐會",
