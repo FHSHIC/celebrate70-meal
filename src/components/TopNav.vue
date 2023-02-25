@@ -26,7 +26,9 @@ const props = defineProps(["navContents"]);
       <p
         class="h-font flex w-full flex-col items-center justify-center px-3 tracking-normal"
       >
-        <span class="text-sm sm:text-base lg:text-lg"> 70 週年 </span>
+        <span class="text-sm sm:text-base lg:text-lg">
+          70 週年&nbsp;&nbsp;&nbsp;
+        </span>
         <span class="text-xs sm:text-sm lg:text-base">校慶募款餐會</span>
       </p>
     </a>
