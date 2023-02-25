@@ -7,7 +7,7 @@
     <div class="space-y-3">
       <p class="text-center">參與方式</p>
       <p class="">認桌：每桌 10 席 捐款 15,000 元</p>
-      <p class="">認席：單席 捐款 15,000 元</p>
+      <p class="">認席：單席 捐款 2,000 元</p>
     </div>
     <div class="space-y-3">
       <p class="text-center">捐款資訊</p>
